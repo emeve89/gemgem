@@ -14,6 +14,10 @@ gem 'trailblazer-rails'
 gem 'trailblazer-loader'
 gem 'reform'
 
+gem 'simple_form'
+gem 'haml'
+gem 'bootstrap-sass'
+
 group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
