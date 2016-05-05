@@ -9,4 +9,9 @@ class ThingsController < ApplicationController
     end
     render action: :new
   end
+
+  def edit
+    form Thing::Update
+    render action: :new
+  end
 end
