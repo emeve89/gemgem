@@ -14,12 +14,10 @@ gem 'trailblazer-rails'
 gem 'trailblazer-loader'
 gem 'reform'
 
-group :test do
-  gem 'minitest-rails-capybara'
-end
-
 group :development, :test do
-  gem 'byebug'
+  gem 'pry'
+  gem 'rspec-rails'
+  gem 'capybara'
 end
 
 group :development do
