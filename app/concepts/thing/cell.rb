@@ -19,4 +19,10 @@ class Thing::Cell < Cell::Concept
   def name_link
     link_to name, thing_path(model)
   end
+
+  def classes
+    classes = ['large-3', 'columns']
+    classes << 'end' if options[:last] == model
+    classes
+  end
 end
