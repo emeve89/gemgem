@@ -15,11 +15,11 @@ gem 'trailblazer-loader'
 gem 'reform'
 gem 'cells'
 gem 'cells-haml'
-gem 'trailblazer-cells'
+gem 'rails-timeago'
 
 gem 'simple_form'
 gem 'haml'
-gem 'bootstrap-sass'
+gem 'foundation-rails'
 
 group :development, :test do
   gem 'pry'
