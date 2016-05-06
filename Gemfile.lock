@@ -53,6 +53,12 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    cells (4.0.5)
+      tilt (>= 1.4, < 3)
+      uber (~> 0.0.9)
+    cells-haml (0.0.10)
+      cells (>= 4.0.1, <= 6.0.0)
+      haml (>= 4.1.0.beta.1)
     coderay (1.1.1)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
@@ -74,7 +80,7 @@ GEM
     execjs (2.6.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
-    haml (4.0.7)
+    haml (4.1.0.beta.1)
       tilt
     i18n (0.7.0)
     jbuilder (2.4.1)
@@ -140,23 +146,23 @@ GEM
     representable (3.0.0)
       declarative (~> 0.0.5)
       uber (~> 0.0.15)
-    rspec-core (3.3.2)
-      rspec-support (~> 3.3.0)
-    rspec-expectations (3.3.1)
+    rspec-core (3.4.4)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.3.0)
-    rspec-mocks (3.3.2)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.1)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.3.0)
-    rspec-rails (3.3.3)
+      rspec-support (~> 3.4.0)
+    rspec-rails (3.4.2)
       actionpack (>= 3.0, < 4.3)
       activesupport (>= 3.0, < 4.3)
       railties (>= 3.0, < 4.3)
-      rspec-core (~> 3.3.0)
-      rspec-expectations (~> 3.3.0)
-      rspec-mocks (~> 3.3.0)
-      rspec-support (~> 3.3.0)
-    rspec-support (3.3.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
     sass (3.4.22)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
@@ -167,9 +173,9 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    simple_form (3.1.0)
-      actionpack (~> 4.0)
-      activemodel (~> 4.0)
+    simple_form (3.2.1)
+      actionpack (> 4, < 5.1)
+      activemodel (> 4, < 5.1)
     slop (3.6.0)
     spring (1.7.1)
     sprockets (3.6.0)
@@ -186,6 +192,8 @@ GEM
       declarative
       reform (>= 2.0.0, < 3.0.0)
       uber (>= 0.0.15)
+    trailblazer-cells (0.0.1)
+      cells (>= 4.0.3, < 5.0.0)
     trailblazer-loader (0.0.9)
     trailblazer-rails (0.2.4)
       trailblazer (>= 1.0.4)
@@ -211,6 +219,8 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass
   capybara
+  cells
+  cells-haml
   coffee-rails (~> 4.1.0)
   haml
   jbuilder (~> 2.0)
@@ -224,6 +234,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   simple_form
   spring
+  trailblazer-cells
   trailblazer-loader
   trailblazer-rails
   turbolinks

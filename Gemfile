@@ -13,6 +13,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'trailblazer-rails'
 gem 'trailblazer-loader'
 gem 'reform'
+gem 'cells'
+gem 'cells-haml'
+gem 'trailblazer-cells'
 
 gem 'simple_form'
 gem 'haml'
