@@ -7,7 +7,7 @@ feature 'Thing CRUD' do
     expect(page).to have_css("form #thing_name")
     expect(page).to_not have_css("form #thing_name.readonly")
     click_button 'Create Thing'
-    expect(page).to have_css('.has-error')
+    expect(page).to have_css('.error')
 
     fill_in 'Name', with: 'Bad Religion'
     click_button 'Create Thing'
